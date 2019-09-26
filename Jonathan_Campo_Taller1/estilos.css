@@ -99,10 +99,6 @@ body  .WikiaPageContentWrapper {
 	top: 5%;
 	margin:auto;
  }
-body  section.FollowedPagesModule {
-	background-color:#0000ff;
-	color:#FFFFFF; 
-}
 body  .module {
 	background-color:#000099;
 	color:#ffffff;
@@ -149,28 +145,8 @@ textarea[dir="rtl"],input[dir="rtl"] {
     direction: rtl
 }
 
-abbr,acronym,.explain {
-    border-bottom: 1px dotted;
-    cursor: help
-}
-
-.mw-plusminus-pos {
-    color: #006400;
-}
-
-.mw-plusminus-neg {
-    color: #8b0000;
-}
-
-.mw-plusminus-null {
-    color: #aaa;
-}
 
 .allpagesredirect,.redirect-in-category,.watchlistredir {
-    font-style: italic
-}
-
-span.comment {
     font-style: italic
 }
 
@@ -419,9 +395,6 @@ table.os-suggest-results {
     visibility: hidden
 }
 
-.autocomment {
-    color: gray
-}
 
 #pagehistory .history-user {
     margin-left: 0.4em;
@@ -4519,19 +4492,6 @@ body > a > img[src$="noad.gif"] {
     width: 300px
 }
 
-#WikiaAdInContentPlaceHolder.rail-sticky-module {
-    position: static;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 65px
-}
-
-@media only screen and (max-width: 1023px) {
-    #WikiaAdInContentPlaceHolder.rail-sticky-module {
-        position:static
-    }
-}
-
 #ext-wikia-adEngine-template-modal > section {
     overflow: hidden;
     padding: 0px
@@ -4947,93 +4907,6 @@ ul,ol {
 
 q:after,q:before {
     content: ""
-}
-
-.modalWrapper {
-    box-shadow: 0 10px 60px 0 gray;
-    background: #ffffff;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-color: rgba(255,255,255,0.8);
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding;
-    background-clip: padding-box;
-    color: #3a3a3a;
-    position: absolute
-}
-
-.modalWrapper > h1,.WikiaRail .module .modalWrapper > h3,.modalWrapper .main-header {
-    color: #36767e;
-    font-size: 22px;
-    margin: 20px 60px 20px 20px;
-    overflow: hidden
-}
-
-.modalWrapper .close {
-    zoom:1;float: right;
-    margin: 20px 20px 0 0;
-    z-index: 1
-}
-
-.modalWrapper .close:after {
-    clear: both;
-    content: " ";
-    display: block;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden
-}
-
-.modalWrapper .neutral {
-    background: transparent
-}
-
-.modalWrapper .modalToolbar {
-    text-align: right;
-    background: transparent;
-    margin-top: 20px
-}
-
-.modalWrapper .modalToolbar a {
-    margin-left: 10px
-}
-
-.modalWrapper #WikiaConfirmOk {
-    margin-left: 2px
-}
-
-.modalContent {
-    zoom:1;font-size: 13px;
-    line-height: 21px;
-    display: block;
-    margin: 0 20px 20px 20px
-}
-
-.modalContent:after {
-    clear: both;
-    content: " ";
-    display: block;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden
-}
-
-.modalContent .main-header {
-    margin-left: 0;
-    margin-top: 0
-}
-
-.modalContent .MyToolsConfiguration .options-list {
-    line-height: 1
-}
-
-.modalContent b {
-    font-weight: bold
-}
-
-.modalContent i {
-    font-style: italic
 }
 
 .blackout {
@@ -5524,15 +5397,6 @@ a.new:not([data-rte-instance]):not(.ve-ce-linkAnnotation) {
     padding: 10px
 }
 
-#contentSub .commentslikes {
-    display: inline;
-    font-size: 12px
-}
-
-#contentSub .commentslikes a:hover {
-    text-decoration: none
-}
-
 .wikiaThrobber {
     background: url("https://slot1-images.wikia.nocookie.net/__cb1569003956210/common/skins/common/images/ajax.gif") no-repeat scroll center #ffffff;
     height: 100%;
@@ -5550,116 +5414,6 @@ a.new:not([data-rte-instance]):not(.ve-ce-linkAnnotation) {
 
 .ContentWarning #WikiaMainContent,.ContentWarning {
     display: none
-}
-
-.commentslikes li {
-    border-left: solid 1px #cccccc;
-    border-bottom: none !important;
-    float: left;
-    line-height: 20px;
-    padding: 0 10px
-}
-
-.commentslikes li:first-child {
-    border-left: none
-}
-
-.commentslikes .likes {
-    padding-right: 0;
-    height: 22px;
-    width: 90px
-}
-
-.commentslikes .commentsbubble {
-    background-color: #f2f2f2;
-    background-image: -moz-linear-gradient(top,#ffffff 0%,#f2f2f2 100%);
-    background-image: -webkit-gradient(linear,0% 0%,0% 100%,color-stop(0%,#ffffff),color-stop(100%,#f2f2f2));
-    background-image: -o-linear-gradient(top,#ffffff 0%,#f2f2f2 100%);
-    background-image: -ms-linear-gradient(top,#ffffff 0%,#f2f2f2 100%);
-    border: solid 1px #cccccc;
-    border-radius: 2px;
-    display: inline-block;
-    height: 14px;
-    line-height: 15px;
-    margin: 0 3px;
-    min-width: 15px;
-    padding: 0 5px;
-    position: relative;
-    text-align: center
-}
-
-.commentslikes .commentsbubble:before {
-    border-color: #cccccc #cccccc transparent transparent;
-    border-style: solid;
-    border-width: 5px;
-    content: " ";
-    height: 0px;
-    position: absolute;
-    top: 14px;
-    left: 3px;
-    width: 0px
-}
-
-.commentslikes .commentsbubble:after {
-    border-color: #f2f2f2 #f2f2f2 transparent transparent;
-    border-style: solid;
-    border-width: 4px;
-    content: " ";
-    height: 0px;
-    position: absolute;
-    top: 14px;
-    left: 4px;
-    width: 0px
-}
-
-.commentslikes .wikia-chiclet-button {
-    vertical-align: middle;
-    margin: 0 3px
-}
-
-.commentslikes .comments {
-    *position: relative;
-    *top: -2px;
-    white-space: nowrap
-}
-
-a.comments > .commentsbubble {
-    background-color: #ffffff;
-    font-size: 9px;
-    vertical-align: top;
-    border: solid 1px #cccccc;
-    display: inline-block;
-    height: 11px;
-    line-height: 11px;
-    margin: 2px 3px 0 3px;
-    min-width: 15px;
-    padding: 0;
-    position: relative;
-    text-align: center
-}
-
-a.comments > .commentsbubble:before {
-    border-color: #cccccc #cccccc transparent transparent;
-    border-style: solid;
-    border-width: 3px;
-    content: " ";
-    height: 0px;
-    position: absolute;
-    top: 11px;
-    left: 3px;
-    width: 0px
-}
-
-a.comments > .commentsbubble:after {
-    border-color: #ffffff #ffffff transparent transparent;
-    border-style: solid;
-    border-width: 2px;
-    content: " ";
-    height: 0px;
-    position: absolute;
-    top: 11px;
-    left: 4px;
-    width: 0px
 }
 
 .WikiaSearch {
@@ -6290,14 +6044,6 @@ a.comments > .commentsbubble:after {
 .WikiaArticleInterlang ul li:first-child {
     border: 0;
     padding-left: 0
-}
-
-.WikiaArticleComments.loading {
-    background: url("https://slot1-images.wikia.nocookie.net/__cb1569003956210/common/skins/common/images/ajax.gif") no-repeat 50% 50%;
-    border-top: 1px solid #ffffff;
-    height: 16px;
-    margin: 10px;
-    padding-top: 10px
 }
 
 .fluidWidth {
@@ -7352,45 +7098,6 @@ ul.tabs,ol.tabs {
     margin-right: 2px
 }
 
-.WikiaArticleAfterComments {
-    font-size: 13px;
-    line-height: 21px;
-    padding: 0 10px;
-    position: relative;
-    z-index: 1
-}
-
-.WikiaArticleAfterComments h1,.WikiaArticleAfterComments .WikiaRail .module h3,.WikiaRail .module .WikiaArticleAfterComments h3,.WikiaArticleAfterComments h2,.WikiaArticleAfterComments h3,.WikiaArticleAfterComments h4,.WikiaArticleAfterComments h5,.WikiaArticleAfterComments h6 {
-    margin: .5em 0 .2em
-}
-
-.WikiaArticleAfterComments h2 {
-    border-bottom: solid 1px #cccccc;
-    font-size: 18px;
-    margin-top: 14px;
-    overflow: hidden
-}
-
-.WikiaArticleAfterComments a.new,.WikiaArticleAfterComments a.new:visited {
-    color: #cc2200
-}
-
-.WikiaArticleAfterComments ul,.WikiaArticleAfterComments ol {
-    margin: 0.4em 0 0.5em 2.5em
-}
-
-.WikiaArticleAfterComments ol {
-    list-style: decimal
-}
-
-.WikiaArticleAfterComments ul {
-    list-style: square
-}
-
-.WikiaArticleAfterComments p {
-    margin: 0.4em 0 0.5em
-}
-
 .wds-banner-notification__container {
     margin: 0 auto;
     transition: top 200ms linear;
@@ -7637,12 +7344,6 @@ ul.tabs,ol.tabs {
     border-bottom: 1px solid #cccccc
 }
 
-.WikiaBlogPostHeader .commentslikes {
-    bottom: 10px;
-    position: absolute;
-    right: 0
-}
-
 .WikiaBlogPostHeader .author-details {
     zoom:1;*display: inline;
     padding: 8px 0
@@ -7703,12 +7404,6 @@ ul.tabs,ol.tabs {
     padding: 20px 0
 }
 
-.WikiaBlogListing .commentslikes {
-    position: absolute;
-    right: 10px;
-    top: 20px
-}
-
 .WikiaBlogListing .avatar {
     border: 1px solid #cccccc;
     float: left
@@ -7748,10 +7443,6 @@ ul.tabs,ol.tabs {
     position: relative
 }
 
-.WikiaBlogListingPost .commentslikes a:hover {
-    text-decoration: none
-}
-
 .WikiaBlogListingPost:last-child {
     border: 0
 }
@@ -7769,16 +7460,6 @@ ul.tabs,ol.tabs {
 
 .WikiaBlogListingBox .wikia-button a {
     color: white
-}
-
-.WikiaBlogListingBox .commentslikes {
-    bottom: 16px;
-    position: absolute;
-    right: 0
-}
-
-.WikiaBlogListingBox .commentslikes a {
-    font-weight: normal
 }
 
 .WikiaBlogListingBox ul {
@@ -8715,90 +8396,6 @@ body.wikia-bar-visible {
 
 .ChatModuleUninitialized .chat-contents {
     visibility: hidden
-}
-
-.RelatedForumDiscussion {
-    clear: both;
-    font-size: 12px;
-    line-height: 16px;
-}
-
-.RelatedForumDiscussion h4 {
-    font-weight: bold;
-    margin: 0
-}
-
-.RelatedForumDiscussion ul {
-    margin: 0
-}
-
-.RelatedForumDiscussion ul li {
-    list-style: none;
-    margin: 0;
-    padding: 0
-}
-
-.RelatedForumDiscussion h2 {
-    margin-bottom: 0;
-    padding-top: 3px;
-    line-height: 21px
-}
-
-.RelatedForumDiscussion h2 .forum-new-post {
-    float: right;
-    position: relative;
-    top: -3px
-}
-
-.RelatedForumDiscussion .forum-discussions .forum-thread {
-    border-bottom: dotted 1px #cccccc;
-    line-height: 16px;
-    padding: 15px 0 15px 40px;
-    position: relative
-}
-
-.RelatedForumDiscussion .forum-discussions .forum-thread .forum-total-replies {
-    color: gray;
-    margin-top: 4px
-}
-
-.RelatedForumDiscussion .forum-discussions .forum-thread .talk-two {
-    left: 0;
-    position: absolute;
-    top: 12px
-}
-
-.RelatedForumDiscussion .forum-message-body p {
-    display: inline
-}
-
-.RelatedForumDiscussion .forum-replies .forum-reply {
-    margin-top: 10px;
-    padding-left: 40px;
-    position: relative
-}
-
-.RelatedForumDiscussion .forum-replies .forum-reply .forum-timestamp {
-    color: gray;
-    margin-left: 1em
-}
-
-.RelatedForumDiscussion .forum-replies .forum-reply .forum-user-avatar {
-    border: 1px solid #cccccc;
-    height: 30px;
-    left: 0;
-    position: absolute;
-    top: 3px;
-    width: 30px
-}
-
-.RelatedForumDiscussion .forum-see-more {
-    margin-top: 5px;
-    text-align: right
-}
-
-.RelatedForumDiscussion .forum-user-name {
-    font-weight: bold
 }
 
 nav.toc {
@@ -11290,10 +10887,6 @@ a.wds-button,button.wds-button {
     }
 }
 
-.wds-community-bar__discussions>svg,.wds-community-header__local-navigation .wds-dropdown__toggle-chevron,.wds-is-disabled {
-    opacity: .5
-}
-
 .wds-floating-button {
     align-items: center;
     background: #fff;
@@ -12110,299 +11703,6 @@ a.wds-button,button.wds-button {
     background-color: #3dffff
 }
 
-.wds-community-bar {
-    position: relative
-}
-
-.wds-community-bar__content {
-    align-items: center;
-    border-bottom: 1px solid #bed1cf;
-    display: flex;
-    height: 50px;
-    margin: 0 12px
-}
-
-.wds-community-bar__sitename {
-    flex: 1;
-    font-size: 16px;
-    line-height: 1;
-    max-height: 50px;
-    text-overflow: ellipsis;
-    text-transform: uppercase
-}
-
-.wds-community-bar__sitename a {
-    color: #002a32
-}
-
-@supports (-webkit-line-clamp:2) {
-    .wds-community-bar__sitename {
-        display: -webkit-box;
-        white-space: normal;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical
-    }
-}
-
-.wds-community-bar__discussions,.wds-community-bar__navigation {
-    align-items: center;
-    color: #5f7a7b;
-    display: flex;
-    height: 44px;
-    justify-content: center;
-    width: 44px
-}
-
-.wds-community-bar__navigation .wds-dropdown__toggle svg {
-    margin-left: 6px;
-    opacity: .5
-}
-
-.wds-community-bar__navigation .wds-dropdown {
-    display: block;
-    position: static
-}
-
-.wds-community-bar__navigation .wds-dropdown::after,.wds-community-bar__navigation .wds-dropdown::before {
-    left: auto;
-    transform: translateY(-1px)
-}
-
-.wds-community-bar__navigation .wds-dropdown::before {
-    margin-left: auto
-}
-
-.wds-community-bar__navigation .wds-dropdown::after {
-    margin-left: 1px
-}
-
-.wds-community-bar__navigation .wds-dropdown:hover:not(.wds-is-active) .wds-dropdown__content,.wds-community-bar__navigation .wds-dropdown:hover:not(.wds-is-active)::after,.wds-community-bar__navigation .wds-dropdown:hover:not(.wds-is-active)::before {
-    display: none
-}
-
-.wds-community-bar__navigation .wds-dropdown:hover:not(.wds-is-active) .wds-dropdown__toggle-chevron {
-    transform: none
-}
-
-.wds-community-bar__navigation .wds-dropdown__toggle {
-    align-items: center;
-    display: flex
-}
-
-.wds-community-bar__navigation .wds-dropdown__content {
-    left: 10px;
-    right: 10px;
-    transform: translateY(-1px)
-}
-
-.wds-community-bar__navigation .wds-dropdown.wds-is-active .wds-dropdown__toggle {
-    color: #00d6d6
-}
-
-.wds-community-bar__navigation-back {
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    color: #5f7a7b;
-    display: flex;
-    font-weight: 700;
-    margin-bottom: 6px;
-    padding: 4px 8px 10px
-}
-
-.wds-community-bar__navigation-back .wds-icon {
-    margin-right: 6px;
-    transform: rotate(90deg)
-}
-
-.wds-community-bar__navigation-header {
-    color: #002a32;
-    display: block;
-    font-weight: 700;
-    margin: 0 9px;
-    padding: 4px 8px 6px
-}
-
-.wds-community-bar__level-1.wds-list.wds-is-linked>li>a,.wds-community-bar__level-2 ul.wds-list.wds-is-linked>li>a {
-    align-items: center;
-    display: flex;
-    justify-content: space-between
-}
-
-.wds-community-bar__level-1 .wds-icon,.wds-community-bar__level-2 ul .wds-icon {
-    transform: rotate(270deg)
-}
-
-.wds-community-bar__level-2,.wds-community-bar__level-3 {
-    display: none
-}
-
-.wds-community-bar__level-2.wds-is-active,.wds-community-bar__level-3.wds-is-active {
-    display: block
-}
-
-.wds-community-header {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 105px;
-    position: relative;
-    z-index: 1
-}
-
-@media only screen and (max-width: 1083px) {
-    .wds-community-header {
-        height:115px
-    }
-}
-
-.wds-community-header::before {
-    content: "";
-    display: block;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: -1
-}
-
-.wds-community-header__wordmark {
-    float: left;
-    height: 65px;
-    margin: 20px 0 20px 20px;
-    max-width: 250px;
-    width: auto
-}
-
-.wds-community-header__wordmark img {
-    height: auto;
-    max-height: 100%;
-    max-width: 100%;
-    width: auto
-}
-
-@media only screen and (max-width: 1083px) {
-    .wds-community-header__wordmark {
-        height:49px;
-        margin-bottom: 0;
-        max-width: 175px
-    }
-}
-
-.wds-community-header__top-container {
-    display: flex;
-    height: 59px
-}
-
-.wds-community-header__sitename {
-    flex: 1;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 1;
-    margin: 25px 0 0 18px;
-    overflow: hidden
-}
-
-.wds-community-header__sitename a {
-    text-decoration: none
-}
-
-@media only screen and (max-width: 1083px) {
-    .wds-community-header__top-container {
-        height:69px
-    }
-
-    .wds-community-header__sitename {
-        font-size: 24px;
-        margin-top: 20px;
-        max-height: 72px;
-        white-space: normal;
-        word-wrap: break-word
-    }
-}
-
-@media only screen and (min-width: 1084px) {
-    .wds-community-header__sitename a {
-        display:inline-block;
-        height: 100%;
-        line-height: 1.2;
-        text-decoration: none
-    }
-
-    .wds-community-header__sitename {
-        text-overflow: ellipsis;
-        white-space: nowrap
-    }
-}
-
-.wds-community-header__counter {
-    font-weight: 600;
-    text-align: right;
-    margin: 17px 0 20px 20px
-}
-
-.wds-community-header__counter-value {
-    display: block;
-    font-size: 24px;
-    line-height: 1
-}
-
-@media only screen and (max-width: 1083px) {
-    .wds-community-header__counter {
-        margin-top:22px
-    }
-
-    .wds-community-header__counter-value {
-        font-size: 18px
-    }
-}
-
-.wds-community-header__counter-label {
-    display: block;
-    font-size: 12px;
-    line-height: 1;
-    margin-top: 3px;
-    text-transform: uppercase
-}
-
-.wds-community-header__wiki-buttons {
-    margin: 20px 20px auto 15px
-}
-
-.wds-community-header__wiki-buttons .wds-dropdown__toggle {
-    padding: 7px 3px
-}
-
-.wds-community-header__local-navigation {
-    display: flex;
-    height: 46px;
-    padding-left: 6px
-}
-
-.wds-community-header__local-navigation a[href="#"] {
-    cursor: default
-}
-
-.wds-community-header__local-navigation .wds-dropdown:hover .wds-dropdown__toggle-chevron {
-    opacity: 1
-}
-
-@media only screen and (max-width: 1083px) {
-    .wds-community-header__counter-label {
-        font-size:10px
-    }
-
-    .wds-community-header__local-navigation {
-        clear: both
-    }
-}
-
-@media only screen and (max-width: 1023px) {
-    .wds-community-header__local-navigation .wds-tabs__tab-label {
-        font-size:10px
-    }
-}
-
 .wds-global-footer {
     background-color: #002a32;
     box-sizing: border-box;
@@ -12562,27 +11862,6 @@ a.wds-button,button.wds-button {
     color: #fff
 }
 
-.wds-global-footer__wikia-section.wds-is-community-apps .wds-global-footer__links-list {
-    display: flex
-}
-
-.wds-global-footer__wikia-section.wds-is-community-apps .wds-global-footer__link {
-    display: block;
-    line-height: 1.3em;
-    margin-top: 6px;
-    width: 119px
-}
-
-.wds-global-footer__wikia-section.wds-is-community-apps .wds-global-footer__image {
-    height: 35px;
-    width: 119px
-}
-
-.wds-global-footer__wikia-section.wds-is-community .wds-global-footer__links-list {
-    column-count: 2;
-    margin-bottom: 38px
-}
-
 .wds-global-footer__section-header {
     color: #fff;
     font-size: 12px;
@@ -12637,15 +11916,6 @@ a.wds-button,button.wds-button {
 
     .wds-global-footer__wikia-section.wds-is-create-wiki {
         display: none
-    }
-
-    .wds-global-footer__wikia-section.wds-is-community-apps .wds-global-footer__links-list {
-        margin-bottom: 0;
-        margin-top: 5px
-    }
-
-    .wds-global-footer__wikia-section.wds-is-community-apps .wds-global-footer__link {
-        margin-right: 25px
     }
 
     .wds-global-footer__links-list-item {
@@ -12706,12 +11976,6 @@ a.wds-button,button.wds-button {
         width: 124px
     }
 
-    .wds-global-footer__wikia-section.wds-is-community {
-        min-height: 210px;
-        order: 2;
-        width: 290px
-    }
-
     .wds-global-footer__wikia-section.wds-is-create-wiki {
         display: block;
         order: 5;
@@ -12738,18 +12002,6 @@ a.wds-button,button.wds-button {
 
     .wds-global-footer__wikia-section.wds-is-create-wiki .wds-global-footer__link:hover {
         color: #fff
-    }
-
-    .wds-global-footer__wikia-section.wds-is-community-apps {
-        margin-right: 0;
-        min-height: 210px;
-        order: 3;
-        width: 200px
-    }
-
-    .wds-global-footer__wikia-section.wds-is-community-apps .wds-global-footer__links-list {
-        flex-direction: column;
-        margin-top: 5px
     }
 
     .wds-global-footer__wikia-section.wds-is-advertise {
@@ -13423,16 +12675,6 @@ a.wds-button,button.wds-button {
     margin-right: 75px
 }
 
-@media only screen and (max-width: 767px) {
-    .wds-global-navigation.wds-has-partner-slot .wds-global-navigation__content-bar-right {
-        margin-right:0
-    }
-
-    .wds-global-navigation__community-bar,.wds-global-navigation__content-bar-left {
-        overflow: hidden
-    }
-}
-
 .wds-global-navigation .wds-avatar {
     height: 30px;
     min-width: 30px;
@@ -13532,21 +12774,6 @@ a.wds-button,button.wds-button {
     text-align: center
 }
 
-.wds-global-navigation__community-bar {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 55px
-}
-
-@media only screen and (min-width: 768px) {
-    .wds-global-navigation__community-bar {
-        display:none
-    }
-}
-
 .wds-global-navigation__logo-heart-link {
     align-self: flex-start;
     height: 55px
@@ -13560,55 +12787,6 @@ a.wds-button,button.wds-button {
     padding: 0 5px 0 12px;
     position: relative;
     z-index: 1
-}
-
-.wds-global-navigation__community-bar-separator {
-    border-left: 1px solid #5f7a7b;
-    opacity: 0;
-    height: 30px;
-    margin-left: 12px;
-    width: 1px
-}
-
-.wds-global-navigation .wds-community-bar__sitename {
-    max-width: calc(100vw - 120px);
-    margin-left: 12px;
-    transform: translateY(-55px);
-    transition: transform .4s
-}
-
-.wds-global-navigation .wds-community-bar__sitename a {
-    color: #fff;
-    text-decoration: none
-}
-
-@media only screen and (max-width: 767px) {
-    .wds-global-navigation.wds-is-community-bar-in:not(.wds-is-modal-opened) .wds-global-navigation__logo {
-        transform:translateY(55px)
-    }
-
-    .wds-global-navigation.wds-is-community-bar-in:not(.wds-is-modal-opened) .wds-global-navigation__modal-control {
-        transform: translate(52px)
-    }
-
-    .wds-global-navigation.wds-is-community-bar-in:not(.wds-is-modal-opened) .wds-global-navigation__community-bar-separator {
-        animation-name: separator;
-        animation-duration: .4s;
-        animation-delay: .4s;
-        animation-fill-mode: forwards
-    }
-
-    .wds-global-navigation.wds-is-community-bar-in:not(.wds-is-modal-opened) .wds-global-navigation__modal-control-user {
-        visibility: hidden
-    }
-
-    .wds-global-navigation.wds-is-community-bar-in:not(.wds-is-modal-opened) .wds-global-navigation__content-bar-left {
-        z-index: 0
-    }
-
-    .wds-global-navigation.wds-is-community-bar-in:not(.wds-is-modal-opened) .wds-community-bar__sitename {
-        transform: translateY(0)
-    }
 }
 
 @keyframes separator {
@@ -15188,172 +14366,6 @@ a.wds-button,button.wds-button {
     margin: 5px 12px
 }
 
-body.ve .discussion-module {
-    display: none
-}
-
-.discussion-module {
-    clear: both;
-    padding-top: 20px;
-    position: relative
-}
-
-.discussion-module .subtext {
-    color: #999;
-    font-size: 12px;
-    font-weight: bold
-}
-
-.discussion-module .discussion-title {
-    margin: 0
-}
-
-.discussion-module .discussion-link {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 20px
-}
-
-.discussion-module .discussion-link svg {
-    vertical-align: baseline
-}
-
-.discussion-module .discussion-link .arrow-path {
-    fill: #36767e
-}
-
-.discussion-module .discussion-threads,.discussion-module .discussion-thread,.discussion-module .discussion-meta,.discussion-module .discussion-meta div,.discussion-module .discussion-author {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex
-}
-
-.discussion-module .discussion-threads,.discussion-module .discussion-thread {
-    -ms-box-orient: vertical;
-    -webkit-box-orient: vertical;
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    box-sizing: border-box;
-    margin: 0
-}
-
-.discussion-module .discussion-threads {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    height: 348px;
-    padding: 20px 10px
-}
-
-.discussion-module .discussion-threads .discussion-thread {
-    border: 1px solid #cccccc;
-    cursor: pointer;
-    font-size: 14px;
-    height: 147px;
-    line-height: 18px;
-    list-style-type: none;
-    padding: 10px 15px;
-    position: relative;
-    width: 49%
-}
-
-.discussion-module .discussion-threads .discussion-thread .discussion-content {
-    max-height: 55px;
-    overflow: hidden
-}
-
-.discussion-test .discussion-thread:nth-child(n+3) {
-    -webkit-align-self: flex-end;
-    -ms-align-self: flex-end;
-    align-self: flex-end;
-    font-size: 12px;
-    height: 100px;
-    line-height: 16px;
-    padding: 6px 15px
-}
-
-.discussion-test .discussion-thread:nth-child(n+3) .discussion-meta {
-    display: none
-}
-
-.discussion-test .discussion-thread:nth-child(n+3) .discussion-content {
-    margin-top: .3em
-}
-
-.discussion-author {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center
-}
-
-.discussion-author h4 {
-    color: #36767e;
-    margin: 0 6px;
-    max-width: 56%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
-}
-
-.discussion-author .discussion-author-avatar {
-    border: 2px solid #cccccc;
-    border-radius: 15px;
-    box-sizing: border-box;
-    height: 30px;
-    overflow: hidden;
-    width: 30px
-}
-
-.discussion-meta {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    bottom: 10px;
-    left: 15px;
-    position: absolute;
-    right: 15px
-}
-
-.discussion-meta div {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -ms-flex-positive: 1;
-    box-flex: 1;
-    -webkit-flex-grow: 1;
-    -moz-flex-grow: 1;
-    flex-grow: 1
-}
-
-.discussion-meta div span {
-    line-height: 18px;
-    margin-left: 5px
-}
-
-.discussion-meta .discussion-comments-container {
-    margin-left: -30px
-}
-
-.discussion-meta .discussion-icon {
-    fill: #999;
-    height: 18px;
-    width: 18px
-}
-
-.discussion-meta .upvote-icon-background {
-    fill: white;
-    stroke: white
-}
-
 #mixed-content-footer {
     background-color: rgba(0,0,0,0.1);
     margin: 0 -20px -30px;
@@ -15938,295 +14950,6 @@ h1.mcf-header {
     .mcf-card-related-wikis__title {
         font-size:14px
     }
-}
-
-.mcf-card-discussions {
-    background-color: #fff;
-    height: 597.16567px;
-    width: 334.66667px
-}
-
-@media only screen and (min-width: 1596px) {
-    .mcf-card-discussions {
-        height:686.92216px;
-        width: 386px
-    }
-}
-
-@media only screen and (min-width: 1024px) and (max-width:1083px) {
-    .mcf-card-discussions {
-        height:573.8523px;
-        width: 321.33333px
-    }
-}
-
-@media only screen and (max-width: 1023px) {
-    .mcf-card-discussions {
-        height:419.98403px;
-        width: 233.33333px
-    }
-}
-
-.mcf-card-discussions__header {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    color: #1a1a1a;
-    font-size: 18px;
-    font-weight: 600;
-    word-wrap: break-word;
-    padding: 16px
-}
-
-@media only screen and (max-width: 1023px) {
-    .mcf-card-discussions__header {
-        font-size:14px
-    }
-}
-
-.mcf-card-discussions__link {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    color: #1a5eb8;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: right;
-    text-decoration: none
-}
-
-.mcf-card-discussions__link-icon {
-    margin-left: 6px;
-    transform: rotate(180deg)
-}
-
-.mcf-card-discussions__list {
-    background-image: radial-gradient(farthest-side at 50% 0,rgba(26,26,26,0.12),transparent),radial-gradient(farthest-side at 50% 100%,rgba(26,26,26,0.12),transparent);
-    background-position: 0 0,0 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 9px;
-    max-height: 100%;
-    overflow-y: auto;
-    position: relative;
-    z-index: 1
-}
-
-.mcf-card-discussions__list::after,.mcf-card-discussions__list::before {
-    background-color: #fff;
-    content: '';
-    display: block;
-    height: 30px;
-    margin: 0 0 -30px;
-    position: relative;
-    z-index: -1
-}
-
-.mcf-card-discussions__list::after {
-    background-color: #fff;
-    margin: -29px 0 0
-}
-
-.mcf-card-discussions__item {
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-box-orient: vertical;
-    -webkit-box-orient: vertical;
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    border-bottom: 1px solid #ccc;
-    margin: 0 16px
-}
-
-.mcf-card-discussions__item:last-child {
-    border-bottom: 0
-}
-
-.mcf-card-discussions__item a {
-    color: #ccc;
-    text-decoration: none;
-    width: 100%
-}
-
-.mcf-card-discussions__user-info {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    color: #ccc;
-    margin-top: 12px
-}
-
-.mcf-card-discussions__user-info .wds-avatar {
-    height: 26px;
-    min-width: 26px;
-    width: 26px
-}
-
-.mcf-card-discussions__user-info .wds-avatar a {
-    color: #ccc
-}
-
-.mcf-card-discussions__user-info .wds-avatar a:hover {
-    color: #ccc
-}
-
-.mcf-card-discussions__user-info .wds-avatar .wds-avatar__image {
-    background-color: #fff;
-    fill: #ccc
-}
-
-.mcf-card-discussions__user-info .wds-avatar .wds-avatar__image:hover {
-    fill: #ccc
-}
-
-.mcf-card-discussions__user-info .wds-avatar img.wds-avatar__image {
-    border: solid 2px #ccc
-}
-
-.mcf-card-discussions__user-info .wds-avatar img.wds-avatar__image:hover {
-    border-color: #ccc
-}
-
-.mcf-card-discussions__user-info .wds-avatar .wds-avatar__badge {
-    height: 14.6014px;
-    min-width: 14.6014px;
-    width: 14.6014px;
-    left: -4.17183px;
-    top: -5.84056px
-}
-
-.mcf-card-discussions__user-subtitle {
-    color: #1a1a1a;
-    font-weight: bold;
-    font-size: 14px;
-    margin-left: 6px;
-    opacity: 0.5
-}
-
-@media only screen and (max-width: 1023px) {
-    .mcf-card-discussions__user-subtitle {
-        font-size:12px
-    }
-}
-
-.mcf-card-discussions__content {
-    color: #1a1a1a;
-    font-size: 18px;
-    margin: 6px 0 10px;
-    word-wrap: break-word
-}
-
-@media only screen and (max-width: 1023px) {
-    .mcf-card-discussions__content {
-        font-size:14px
-    }
-}
-
-.mcf-card-discussions__meta {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    font-size: 14px;
-    padding-bottom: 12px
-}
-
-@media only screen and (max-width: 1023px) {
-    .mcf-card-discussions__meta {
-        font-size:12px
-    }
-}
-
-.mcf-card-discussions__in {
-    color: #999
-}
-
-.mcf-card-discussions__counters {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    color: #999
-}
-
-.mcf-card-discussions__counters svg {
-    color: #ccc;
-    margin: 0 3px 0 6px
-}
-
-.mcf-card-discussions__zero-state {
-    border: dashed 1px #ccc;
-    display: flex;
-    flex-direction: column;
-    height: 163px;
-    margin: 18px auto;
-    width: 298px
-}
-
-@media only screen and (min-width: 1596px) {
-    .mcf-card-discussions__zero-state {
-        width:302px
-    }
-}
-
-@media only screen and (min-width: 1024px) and (max-width:1083px) {
-    .mcf-card-discussions__zero-state {
-        width:237.33333px
-    }
-}
-
-@media only screen and (max-width: 1023px) {
-    .mcf-card-discussions__zero-state {
-        width:149.33333px;
-        height: 220px
-    }
-}
-
-.mcf-card-discussions__zero-state:hover {
-    text-decoration: none
-}
-
-.mcf-card-discussions__zero-state-icon {
-    fill: #ccc;
-    margin: 36px auto 6px auto
-}
-
-.mcf-card-discussions__zero-state-text {
-    color: #333333;
-    font-size: 16px;
-    line-height: 1.38;
-    padding: 0 24px;
-    text-align: center
 }
 
 /* extensions/wikia/PortableInfobox/styles/PortableInfobox.scss */

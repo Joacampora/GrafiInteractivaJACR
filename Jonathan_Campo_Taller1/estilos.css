@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-
-.menunav {
-	width: 650px;
-	margin: auto;
-	box-align: center;
-}
-
 h1{
 	color:rgb(45, 45, 105);
 	font-size: 36px;
@@ -22,13 +15,13 @@ h1:link {
 }
 h2 {
 	color:rgb(32, 58, 82);
-	font-size: 24px;
 	font-weight: normal;
-	text-decoration: none;
-	text-align: left;
-	max-width: 640px;
 	margin:auto;
-	padding:44px 10px 2px 10px;
+    padding:44px 10px 2px 10px;    
+    border-bottom: solid 1px #cccccc;
+    font-size: 18px;
+    margin-top: 15px;
+    overflow: hidden;
 }
 
 th {
@@ -37,7 +30,6 @@ th {
 	font-weight: normal;
 	text-align: center;
 	padding: 10px 6px 4px 10px;
-	border-style:outset;
 	border-left:1px;
     border-color: #1f1e55;  
     font-weight: bold;
@@ -211,12 +203,7 @@ body {
     z-index: 1
 }
 
-.Article h2 {
-    border-bottom: solid 1px #cccccc;
-    font-size: 18px;
-    margin-top: 15px;
-    overflow: hidden;
-}
+
 
 .Article h3 {
     font-size: 16px;
@@ -366,22 +353,15 @@ body {
     padding: 0
 }
 
-.page-header {
+.page-header {    
+    align-self: flex-end;
     align-items: flex-start;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    justify-content: flex-end;
     padding: 16px 0 12px;
     position: relative;
     width: 100%;
-    z-index: 4
-}
-
-.page-header_main {
-    align-self: flex-end;
+    z-index: 4;
+    text-align: left;
     box-flex: 1;
     flex-grow: 1;
     max-width: 100%;
@@ -391,14 +371,13 @@ body {
 .page-header_title {
     display: flex;
     margin: auto;
-    align-items: flex-end;
+    box-align: center;
     color: #3a3a3a;
     display: inline-block;
     font-size: 36px;
     font-weight: bold;
     line-height: 1;
     max-width: 100%;
-    word-wrap: break-word;
     text-align: center;
 }
 .separator {
@@ -409,113 +388,37 @@ body {
     margin-top: 0;
     width: 100%
 }
-.portable-infobox {
-    background-color: #ebf1f2;
-    clear: right;
-    float: right;
-    margin: 0 0 15px 15px;
-    width: 270px
+
+.menunav {
+	width: 650px;
+	margin: auto;
+	box-align: center;
 }
 
-.portable-infobox .pi-item-spacing {
-    padding: 5px 10px
-}
-
-.portable-infobox .pi-secondary-font {
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 18px;
-    margin-top: 0
-}
-
-.portable-infobox .pi-header,.portable-infobox .pi-title {
-    border: 0;
-    margin: 0
-}
-
-.portable-infobox .pi-title {
-    font-size: 18px;
-    line-height: 28px
-}
-
-.portable-infobox .pi-data-label {
-    margin-bottom: inherit;
-    margin-top: 0
-}
-
-.portable-infobox .pi-data-value > *,.portable-infobox .pi-data-value li {
-    margin: 0
-}
-
-.portable-infobox .pi-data-value ol,.portable-infobox .pi-data-value ul {
-    list-style-position: inside
-}
-
-.portable-infobox .pi-data-value li {
-    line-height: 19px
-}
-
-.portable-infobox .pi-section-label {
-    color: #36767e
-}
-
-.pi-border-color {
-    border-color: #cddddf
-}
-
-.pi-image {
-    text-align: center
-}
-
-.pi-data,.pi-group {
-    border-bottom-style: solid;
-    border-bottom-width: 1px
-}
-
-.pi-data {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-box-orient: horizontal;
-    -webkit-box-orient: horizontal;
-    -ms-flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    box-sizing: border-box;
+.menunav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    width: 100%
-}
-
-.pi-data-label {
-    -ms-flex-preferred-size: 90px;
-    -webkit-flex-basis: 90px;
-    -moz-flex-basis: 90px;
-    flex-basis: 90px;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    overflow: hidden;
-    word-wrap: break-word
-}
-
-.pi-data-value {
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    font-size: 12px;
-    line-height: 18px;
-    padding-left: 0;
-    word-break: break-word
-}
-
-.pi-section-tab:hover .pi-section-label {
-    color: #173337
-}
-
-.pi-section-content {
-    display: none
-}
+    background-color: #333;
+  }
+  
+.menunav   li {
+    float: left;
+  }
+  
+.menunav   li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.menunav   li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+.menunav   .active {
+    background-color: #4CAF50;
+  }

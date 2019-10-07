@@ -157,22 +157,13 @@ img.tex {
     text-align:center;
 }
 
-body > a > img[src$="noad.gif"] {
-    position: absolute;
-    z-index: 0
-}
-
-article,aside,canvas,details,figcaption,figure,footer,header,nav,section{
-    display: block
-}
-
 body {
     color: #3a3a3a;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 12px;
     margin: 0;
     overflow-x: auto;
-    padding: 0
+    padding: 10px
 }
 
 a {
@@ -404,10 +395,6 @@ body {
         width:-webkit-calc(100% );
         width: calc(100% )
     }
-}
-
-.Article {
-    padding: 0
 }
 
 .page-header {

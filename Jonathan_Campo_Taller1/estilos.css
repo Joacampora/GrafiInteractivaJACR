@@ -60,7 +60,7 @@ body {
     color: #3a3a3a;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 12px;
-    padding: 5px 5px 5px 5px
+    padding: 5px 5px 5px 5px;
     background-color:#f3f3f7;
     position: relative;
     max-width:75%;
@@ -176,3 +176,37 @@ la propiedad tleft o tright indican a que borde se ubica la imagen*/
 .menunav   .active {
     background-color: #4CAF50;
   }
+  
+@media only screen and (max-width: 440px) {
+    .menunav {
+		min-width:100px;
+		max-width:250px;
+    }
+	.texto {
+		font-size: 10px;
+		line-height: 1.6;
+        max-width:350px;
+        }
+    }	
+@media only screen and (max-width: 720px) {
+	.texto {
+		font-size: 16px;
+		line-height: 1.6;
+        max-width:350px;
+        }
+    .menunav {
+            min-width:130px;
+            max-width:290px;
+        }
+}
+@media only screen and (max-width: 835px) {
+	.menunav {
+		min-width:200px;
+		max-width:480px;
+    }
+    .texto {
+		font-size: 19px;
+		line-height: 1.6;
+        max-width:350px;
+        }
+}

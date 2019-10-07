@@ -102,11 +102,6 @@ h2 {
     height: 100px;
 }
 
-@media only screen and (max-width: 835px) {
-.menunav {
-	min-width:200px;
-    max-width:480px;
-}
 .texto {
 	font-size: 14px;
     line-height: 1.4;
@@ -119,11 +114,23 @@ h2 {
     width: 60px;
     height: 60px;
 }
-}
 
+@media only screen and (max-width: 440px) {
+	.texto {
+		font-size: 10px;
+		line-height: 1.6;
+		max-width:350px;
+	}}	
 @media only screen and (max-width: 720px) {
 	body {
     background-color: #336633;
+}
+}
+@media only screen and (max-width: 835px) {
+	.menunav {
+		min-width:200px;
+		max-width:480px;
+	}
 }
 h1{
 	font-family: Ancizar Sans-regular;
@@ -140,12 +147,6 @@ h1{
 }
 }
 	
-@media only screen and (max-width: 440px) {
-.texto {
-	font-size: 10px;
-    line-height: 1.6;
-    max-width:350px;
-}	
 h1 {
 	font-size: 26px;
 }
